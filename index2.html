@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <h1>Guessing Game</h1>
+
+    <input type="number" id="numberInput" value="0" min="0" max="100">
+    <div class="box" id="numberBox"></div>
+
+    <button onclick="checkGuess()">Check</button>
+    <div id="resultArea"></div>
+
+    <button onclick="play()">Play</button>
+    <div id="countArea"></div>
+
+    <div id="highScoreArea"></div>
+    <img src="./photo.jpeg" id="hiddenImage" style="display: none;">
+    <div class="playgame">
+        <pre>
+        How to play:
+        1. Start by clicking on play button.  
+        2. If you have guessed the number click play button to play again.
+        3. Try to break the high score.
+        </pre>
+    </div>
+     <script src="./js22.js"></script>
+</body>
+</html>

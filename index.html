@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hed">DOM HANDSON</div>
+    <hr>
+    <span>1.Write the code to access element which is having id as "text"</span>
+    <pre>
+ var element = document.getElementById("text");
+
+if (element) {
+  console.log(element.innerHTML); 
+} else {
+  console.log("Element with ID 'text' not found.");
+}
+    </pre>
+    <p id="text">ans.one two three four</p>
+    <hr>
+    <span>2.Write the code to access element which is having tag as "h1"</span>
+    <h1>ans. Welcome to this site</h1>
+    <pre>
+  var elements = document.getElementsByTagName("h1");
+
+if (elements.length > 0) {
+  var firstH1 = elements[0];
+  console.log(firstH1.innerHTML);
+} else {
+  console.log("No <h1> elements found.");
+}
+    </pre>
+    <hr>
+    <span>3.Write the code to access element which is having class as "box"</span>
+    <p class="box">ans. My name is box.</p>
+    <pre>
+  var ele = document.getElementsByClassName("box");
+
+if (ele.length > 0) {
+  var firstBox = ele[0];
+  console.log(firstBox.innerHTML); 
+} else {
+  console.log("No elements with the class 'box' found.");
+}
+    </pre>
+    <hr>
+    <p>4."<h1>Hello </h1>
+
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+        <h1 id="myHeading" class="clickable" onclick="toggleHeading()">Hello</h1>
+    <hr>
+    <span>5.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</span>
+    <p>
+        <h1 id="content">Hello World</h1>
+        <button id="replaceButton">Replace Text</button>
+    </p>
+    <hr>
+    <p>6."<h1>Hello </h1>
+
+        Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</p>
+    <h1 id="heading">Hello</h1>
+    <hr>
+    <p>7.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+    <div class="box-container">
+        <div class="cards">Card 1</div>
+        <div class="cards">Card 2</div>
+        <div class="cards">Card 3</div>
+      </div>
+      <button onclick="toggleDirection()"> Direction</button>
+      <hr>
+      <p>8.What’s the difference between window vs document?</p>
+      <table>
+        <tr>
+          <th></th>
+          <th>Window</th>
+          <th>Document</th>
+        </tr>
+        <tr>
+          <td>Definition</td>
+          <td>Represents the browser window or tab where the document is loaded.</td>
+          <td>Represents the HTML document loaded in the window.</td>
+        </tr>
+        <tr>
+          <td>Global Scope</td>
+          <td>`window` object acts as the global object in the browser's JavaScript environment.</td>
+          <td>`document` object is not the global object and is accessible within the scope of the current document.</td>
+        </tr>
+        <tr>
+          <td>Access</td>
+          <td>Accessed using the `window` object prefix (e.g., `window.alert()`).</td>
+          <td>Accessed directly without a prefix (e.g., `alert()`).</td>
+        </tr>
+        <tr>
+          <td>Properties</td>
+          <td>Contains properties related to the browser window, such as `location`, `history`, `navigator`, etc.</td>
+          <td>Contains properties related to the document structure and elements, such as `title`, `body`, `getElementById()`, etc.</td>
+        </tr>
+        <tr>
+          <td>Methods</td>
+          <td>Provides methods for interacting with the browser window, such as `open()`, `close()`, `setTimeout()`, `setInterval()`, etc.</td>
+          <td>Provides methods for manipulating and interacting with the document, such as `getElementById()`, `querySelector()`, `createElement()`, `addEventListener()`, etc.</td>
+        </tr>
+        <tr>
+          <td>Events</td>
+          <td>Handles events related to the window or tab, such as `onload`, `onunload`, `onresize`, etc.</td>
+          <td>Handles events related to the document and its elements, such as `onclick`, `onkeydown`, `onsubmit`, etc.</td>
+        </tr>
+      </table>
+      <hr>
+    <p>9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</p>
+    <div id="clock"></div>
+    <hr>
+    <p>game link</p>
+    <a href="./index2.html">search game</a>
+    <script src="./indexjs.js"></script>
+
+</body>
+</html>

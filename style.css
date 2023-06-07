@@ -1,0 +1,53 @@
+body{
+    background-color: aquamarine;
+}
+.hed{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: 2px solid greenyellow;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-right: 2px solid greenyellow;
+  }
+
+  tr:last-child td {
+    border-bottom: 2px dotted goldenrod;
+  }
+  #clock{
+    font-size: 24px;
+  }
